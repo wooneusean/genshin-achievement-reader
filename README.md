@@ -4,6 +4,8 @@ This tool reads your Genshin Impact achievements and stores them in a formatted 
 
 ## Usage
 
+Install tesseract, follow this [guide](https://github.com/tesseract-ocr/tesseract#installing-tesseract)
+
 Run the script and adjust the window to cover the achievements page. Then press <kbd>Enter</kbd> on the keyboard to start scanning for the current page.
 
 A page refers to the achievement pages in Genshin Impact, i.e "Wonders of the World" or "Mortal Travails: Series I"
