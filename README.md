@@ -41,4 +41,4 @@ This project uses the achievement data and IDs from [paimon.moe](https://paimon.
 This is an early version but it still does the same thing
 
 [![Watch the video](https://user-images.githubusercontent.com/20278298/199739441-42843f71-5588-4b73-beeb-3b0220fe9525.png)
-](https://www.youtube.com/embed/lpvMbs4FRPs)
+](https://www.youtube.com/watch?v=lpvMbs4FRPs)
