@@ -6,7 +6,7 @@ This tool reads your Genshin Impact achievements and stores them in a formatted 
 
 1. Install Tesseract OCR following this [guide](https://github.com/tesseract-ocr/tesseract#installing-tesseract)
 
-2. [Download the zip archive](https://github.com/npanuhin/genshin-achievement-reader/archive/refs/heads/main.zip) and extract it
+2. Download the [zip archive](https://github.com/wooneusean/genshin-achievement-reader/archive/refs/heads/main.zip) and extract it
 
 ## Usage
 
