@@ -2,9 +2,13 @@
 
 This tool reads your Genshin Impact achievements and stores them in a formatted file that can directly be used with [paimon.moe](https://paimon.moe/)
 
-## Usage
+## Installation
 
-Install tesseract, follow this [guide](https://github.com/tesseract-ocr/tesseract#installing-tesseract)
+1. Install Tesseract OCR following this [guide](https://github.com/tesseract-ocr/tesseract#installing-tesseract)
+
+2. [Download the zip archive](https://github.com/npanuhin/genshin-achievement-reader/archive/refs/heads/main.zip) and extract it
+
+## Usage
 
 Run the script and adjust the window to cover the achievements page. Then press <kbd>Enter</kbd> on the keyboard to start scanning for the current page.
 
@@ -14,11 +18,9 @@ Once you are done scanning a page, press the <kbd>Right</kbd> or <kbd>Left</kbd>
 
 Once you are done scanning, press <kbd>Esc</kbd> to save the scanned achievements to a file.
 
-The file will be named `completed.json`.
+The result file will be named `complete.json`. Copy its contents and paste it into [line 11](update_script.js#L11) of `update_script.js`
 
-Copy the contents of `completed.json` and paste it into line 12 of `update_script.js` as the first argument of `objectStore.put()`
-
-Then copy the contents of `update_script.js` and run it in the dev tools window of [paimon.moe](https://paimon.moe/)
+Then copy the contents of `update_script.js` and run it in the dev tools window of [paimon.moe](https://paimon.moe). After that you can reload the page and [check the results](https://paimon.moe/achievement)! 
 
 ## Updating Achievement Data
 
@@ -34,7 +36,7 @@ This project uses the achievement data and IDs from [paimon.moe](https://paimon.
 
 ## To-do
 
-1. Add ability to scan tiers of complete-ness of achievements.
+* Add ability to scan tiers of complete-ness of achievements.
 
 ## Preview
 

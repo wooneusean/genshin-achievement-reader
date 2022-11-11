@@ -1,4 +1,4 @@
-from pprint import isreadable
+# from pprint import isreadable
 import pytesseract
 import numpy as np
 from mss import mss
@@ -8,8 +8,8 @@ from fuzzywuzzy import fuzz
 
 achievement_page = 0
 
-f = open("./achievements.json", encoding="utf-8")
-achievements = json.load(f)
+with open("./achievements.json", encoding="utf-8") as f:
+    achievements = json.load(f)
 completed_achievements = {str(achievement_page): {}}
 has_exited = False
 is_ready = False
@@ -61,9 +61,9 @@ root.configure(bg="red")
 root.attributes("-transparentcolor", "red")
 root.resizable(True, True)
 root.bind('<Escape>', lambda e: close_win(e, root))
-root.bind('<Left>', lambda e:  change_page(e, -1))
-root.bind('<Right>', lambda e:  change_page(e, 1))
-root.bind('<Return>', lambda e:  ready_up(e))
+root.bind('<Left>', lambda e: change_page(e, -1))
+root.bind('<Right>', lambda e: change_page(e, 1))
+root.bind('<Return>', lambda e: ready_up(e))
 change_page(None, 0)
 
 with mss() as sct:
